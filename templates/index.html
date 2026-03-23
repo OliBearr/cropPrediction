@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction</title>
+</head>
+<body>
+    <h2>Crop Recommendation</h2>
+    <form action="/predict" method="post">
+        <label for="N">N:</label>
+        <input type="number" step="any" id="N" name="N" placeholder="Enter N value" required><br>
+
+        <label for="P">P:</label>
+        <input type="number" step="any" id="P" name="P" placeholder="Enter P value" required><br>
+
+        <label for="K">K:</label>
+        <input type="number" step="any" id="K" name="K" placeholder="Enter K value" required><br>
+
+        <label for="temperature">Temperature:</label>
+        <input type="number" step="any" id="temperature" name="temperature" placeholder="Enter temperature" required><br>
+
+        <label for="humidity">Humidity:</label>
+        <input type="number" step="any" id="humidity" name="humidity" placeholder="Enter humidity" required><br>
+
+        <label for="ph">pH:</label>
+        <input type="number" step="any" id="ph" name="ph" placeholder="Enter soil pH" required><br>
+
+        <label for="rainfall">Rainfall:</label>
+        <input type="number" step="any" id="rainfall" name="rainfall" placeholder="Enter rainfall" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
